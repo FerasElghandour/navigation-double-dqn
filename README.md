@@ -8,6 +8,15 @@ Online action selection and target-network evaluation, experience replay, epsilo
 
 ![Implementation mechanism: State and epsilon-greedy local Q-values → Replay transition batch → Local network selects next action → Target network evaluates selected action → TD loss and soft target update](assets/mechanism.svg)
 
+
+
+## Train the Double DQN agent
+
+A new CartPole-v1 path trains the released agent, selects checkpoints using separate validation reset seeds, and evaluates against random and zero-action baselines on disjoint final reset seeds. Three100-episode runs and reloadable checkpoints are included.
+
+[Commands, artifacts and benchmark scope](BENCHMARKS.md) · [Versioned profiles](reproduction.json)
+
+
 ## Try a small example
 
 Generated transitions exercise action selection and one learning update. This does not establish navigation performance in an environment.

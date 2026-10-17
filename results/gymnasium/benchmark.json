@@ -1,0 +1,1744 @@
+{
+  "protocol": "New Gymnasium task; validation-selected checkpoint; disjoint final reset seeds; random and zero baselines; no legacy solve claim",
+  "task": "CartPole-v1",
+  "gymnasium": "1.4.0",
+  "torch": "2.14.1",
+  "python": "3.14.3",
+  "continuous_reward_training_scale": 1.0,
+  "truncations_bootstrap": true,
+  "seeds": [
+    {
+      "seed": 0,
+      "task": "CartPole-v1",
+      "training_episodes": 100,
+      "selected_episode": 40,
+      "validation_seeds": [
+        1000000,
+        1000001,
+        1000002,
+        1000003,
+        1000004
+      ],
+      "test_seeds": [
+        2000000,
+        2000001,
+        2000002,
+        2000003,
+        2000004,
+        2000005,
+        2000006,
+        2000007,
+        2000008,
+        2000009
+      ],
+      "policy_returns": [
+        10.0,
+        9.0,
+        8.0,
+        12.0,
+        10.0,
+        11.0,
+        9.0,
+        11.0,
+        9.0,
+        10.0
+      ],
+      "random_returns": [
+        10.0,
+        23.0,
+        22.0,
+        16.0,
+        20.0,
+        22.0,
+        13.0,
+        18.0,
+        17.0,
+        34.0
+      ],
+      "zero_returns": [
+        9.0,
+        9.0,
+        8.0,
+        11.0,
+        10.0,
+        10.0,
+        9.0,
+        10.0,
+        9.0,
+        10.0
+      ],
+      "mean_return": 9.9,
+      "random_mean": 19.5,
+      "zero_mean": 9.5,
+      "checkpoint_sha256": "8210d45440af5826b03c9400eed69ab4520b383247c9678c066d82a9e3ce3c2a",
+      "trace": [
+        {
+          "episode": 1,
+          "return": 11.0,
+          "steps_so_far": 11
+        },
+        {
+          "episode": 2,
+          "return": 31.0,
+          "steps_so_far": 42
+        },
+        {
+          "episode": 3,
+          "return": 23.0,
+          "steps_so_far": 65
+        },
+        {
+          "episode": 4,
+          "return": 26.0,
+          "steps_so_far": 91
+        },
+        {
+          "episode": 5,
+          "return": 20.0,
+          "steps_so_far": 111
+        },
+        {
+          "episode": 6,
+          "return": 12.0,
+          "steps_so_far": 123
+        },
+        {
+          "episode": 7,
+          "return": 24.0,
+          "steps_so_far": 147
+        },
+        {
+          "episode": 8,
+          "return": 33.0,
+          "steps_so_far": 180
+        },
+        {
+          "episode": 9,
+          "return": 19.0,
+          "steps_so_far": 199
+        },
+        {
+          "episode": 10,
+          "return": 36.0,
+          "steps_so_far": 235,
+          "validation_mean": 9.4
+        },
+        {
+          "episode": 11,
+          "return": 11.0,
+          "steps_so_far": 246
+        },
+        {
+          "episode": 12,
+          "return": 14.0,
+          "steps_so_far": 260
+        },
+        {
+          "episode": 13,
+          "return": 15.0,
+          "steps_so_far": 275
+        },
+        {
+          "episode": 14,
+          "return": 20.0,
+          "steps_so_far": 295
+        },
+        {
+          "episode": 15,
+          "return": 26.0,
+          "steps_so_far": 321
+        },
+        {
+          "episode": 16,
+          "return": 42.0,
+          "steps_so_far": 363
+        },
+        {
+          "episode": 17,
+          "return": 13.0,
+          "steps_so_far": 376
+        },
+        {
+          "episode": 18,
+          "return": 15.0,
+          "steps_so_far": 391
+        },
+        {
+          "episode": 19,
+          "return": 14.0,
+          "steps_so_far": 405
+        },
+        {
+          "episode": 20,
+          "return": 16.0,
+          "steps_so_far": 421,
+          "validation_mean": 9.4
+        },
+        {
+          "episode": 21,
+          "return": 21.0,
+          "steps_so_far": 442
+        },
+        {
+          "episode": 22,
+          "return": 14.0,
+          "steps_so_far": 456
+        },
+        {
+          "episode": 23,
+          "return": 20.0,
+          "steps_so_far": 476
+        },
+        {
+          "episode": 24,
+          "return": 10.0,
+          "steps_so_far": 486
+        },
+        {
+          "episode": 25,
+          "return": 13.0,
+          "steps_so_far": 499
+        },
+        {
+          "episode": 26,
+          "return": 15.0,
+          "steps_so_far": 514
+        },
+        {
+          "episode": 27,
+          "return": 24.0,
+          "steps_so_far": 538
+        },
+        {
+          "episode": 28,
+          "return": 20.0,
+          "steps_so_far": 558
+        },
+        {
+          "episode": 29,
+          "return": 36.0,
+          "steps_so_far": 594
+        },
+        {
+          "episode": 30,
+          "return": 19.0,
+          "steps_so_far": 613,
+          "validation_mean": 9.4
+        },
+        {
+          "episode": 31,
+          "return": 31.0,
+          "steps_so_far": 644
+        },
+        {
+          "episode": 32,
+          "return": 14.0,
+          "steps_so_far": 658
+        },
+        {
+          "episode": 33,
+          "return": 26.0,
+          "steps_so_far": 684
+        },
+        {
+          "episode": 34,
+          "return": 19.0,
+          "steps_so_far": 703
+        },
+        {
+          "episode": 35,
+          "return": 26.0,
+          "steps_so_far": 729
+        },
+        {
+          "episode": 36,
+          "return": 28.0,
+          "steps_so_far": 757
+        },
+        {
+          "episode": 37,
+          "return": 16.0,
+          "steps_so_far": 773
+        },
+        {
+          "episode": 38,
+          "return": 19.0,
+          "steps_so_far": 792
+        },
+        {
+          "episode": 39,
+          "return": 25.0,
+          "steps_so_far": 817
+        },
+        {
+          "episode": 40,
+          "return": 19.0,
+          "steps_so_far": 836,
+          "validation_mean": 9.8
+        },
+        {
+          "episode": 41,
+          "return": 10.0,
+          "steps_so_far": 846
+        },
+        {
+          "episode": 42,
+          "return": 17.0,
+          "steps_so_far": 863
+        },
+        {
+          "episode": 43,
+          "return": 16.0,
+          "steps_so_far": 879
+        },
+        {
+          "episode": 44,
+          "return": 22.0,
+          "steps_so_far": 901
+        },
+        {
+          "episode": 45,
+          "return": 34.0,
+          "steps_so_far": 935
+        },
+        {
+          "episode": 46,
+          "return": 14.0,
+          "steps_so_far": 949
+        },
+        {
+          "episode": 47,
+          "return": 13.0,
+          "steps_so_far": 962
+        },
+        {
+          "episode": 48,
+          "return": 18.0,
+          "steps_so_far": 980
+        },
+        {
+          "episode": 49,
+          "return": 16.0,
+          "steps_so_far": 996
+        },
+        {
+          "episode": 50,
+          "return": 58.0,
+          "steps_so_far": 1054,
+          "validation_mean": 9.4
+        },
+        {
+          "episode": 51,
+          "return": 12.0,
+          "steps_so_far": 1066
+        },
+        {
+          "episode": 52,
+          "return": 19.0,
+          "steps_so_far": 1085
+        },
+        {
+          "episode": 53,
+          "return": 15.0,
+          "steps_so_far": 1100
+        },
+        {
+          "episode": 54,
+          "return": 15.0,
+          "steps_so_far": 1115
+        },
+        {
+          "episode": 55,
+          "return": 23.0,
+          "steps_so_far": 1138
+        },
+        {
+          "episode": 56,
+          "return": 18.0,
+          "steps_so_far": 1156
+        },
+        {
+          "episode": 57,
+          "return": 28.0,
+          "steps_so_far": 1184
+        },
+        {
+          "episode": 58,
+          "return": 19.0,
+          "steps_so_far": 1203
+        },
+        {
+          "episode": 59,
+          "return": 16.0,
+          "steps_so_far": 1219
+        },
+        {
+          "episode": 60,
+          "return": 13.0,
+          "steps_so_far": 1232,
+          "validation_mean": 9.4
+        },
+        {
+          "episode": 61,
+          "return": 29.0,
+          "steps_so_far": 1261
+        },
+        {
+          "episode": 62,
+          "return": 12.0,
+          "steps_so_far": 1273
+        },
+        {
+          "episode": 63,
+          "return": 14.0,
+          "steps_so_far": 1287
+        },
+        {
+          "episode": 64,
+          "return": 18.0,
+          "steps_so_far": 1305
+        },
+        {
+          "episode": 65,
+          "return": 11.0,
+          "steps_so_far": 1316
+        },
+        {
+          "episode": 66,
+          "return": 50.0,
+          "steps_so_far": 1366
+        },
+        {
+          "episode": 67,
+          "return": 17.0,
+          "steps_so_far": 1383
+        },
+        {
+          "episode": 68,
+          "return": 15.0,
+          "steps_so_far": 1398
+        },
+        {
+          "episode": 69,
+          "return": 22.0,
+          "steps_so_far": 1420
+        },
+        {
+          "episode": 70,
+          "return": 19.0,
+          "steps_so_far": 1439,
+          "validation_mean": 9.4
+        },
+        {
+          "episode": 71,
+          "return": 27.0,
+          "steps_so_far": 1466
+        },
+        {
+          "episode": 72,
+          "return": 18.0,
+          "steps_so_far": 1484
+        },
+        {
+          "episode": 73,
+          "return": 11.0,
+          "steps_so_far": 1495
+        },
+        {
+          "episode": 74,
+          "return": 23.0,
+          "steps_so_far": 1518
+        },
+        {
+          "episode": 75,
+          "return": 15.0,
+          "steps_so_far": 1533
+        },
+        {
+          "episode": 76,
+          "return": 13.0,
+          "steps_so_far": 1546
+        },
+        {
+          "episode": 77,
+          "return": 11.0,
+          "steps_so_far": 1557
+        },
+        {
+          "episode": 78,
+          "return": 19.0,
+          "steps_so_far": 1576
+        },
+        {
+          "episode": 79,
+          "return": 13.0,
+          "steps_so_far": 1589
+        },
+        {
+          "episode": 80,
+          "return": 10.0,
+          "steps_so_far": 1599,
+          "validation_mean": 9.4
+        },
+        {
+          "episode": 81,
+          "return": 9.0,
+          "steps_so_far": 1608
+        },
+        {
+          "episode": 82,
+          "return": 18.0,
+          "steps_so_far": 1626
+        },
+        {
+          "episode": 83,
+          "return": 18.0,
+          "steps_so_far": 1644
+        },
+        {
+          "episode": 84,
+          "return": 11.0,
+          "steps_so_far": 1655
+        },
+        {
+          "episode": 85,
+          "return": 17.0,
+          "steps_so_far": 1672
+        },
+        {
+          "episode": 86,
+          "return": 11.0,
+          "steps_so_far": 1683
+        },
+        {
+          "episode": 87,
+          "return": 17.0,
+          "steps_so_far": 1700
+        },
+        {
+          "episode": 88,
+          "return": 12.0,
+          "steps_so_far": 1712
+        },
+        {
+          "episode": 89,
+          "return": 11.0,
+          "steps_so_far": 1723
+        },
+        {
+          "episode": 90,
+          "return": 15.0,
+          "steps_so_far": 1738,
+          "validation_mean": 9.4
+        },
+        {
+          "episode": 91,
+          "return": 14.0,
+          "steps_so_far": 1752
+        },
+        {
+          "episode": 92,
+          "return": 24.0,
+          "steps_so_far": 1776
+        },
+        {
+          "episode": 93,
+          "return": 13.0,
+          "steps_so_far": 1789
+        },
+        {
+          "episode": 94,
+          "return": 12.0,
+          "steps_so_far": 1801
+        },
+        {
+          "episode": 95,
+          "return": 11.0,
+          "steps_so_far": 1812
+        },
+        {
+          "episode": 96,
+          "return": 10.0,
+          "steps_so_far": 1822
+        },
+        {
+          "episode": 97,
+          "return": 19.0,
+          "steps_so_far": 1841
+        },
+        {
+          "episode": 98,
+          "return": 14.0,
+          "steps_so_far": 1855
+        },
+        {
+          "episode": 99,
+          "return": 22.0,
+          "steps_so_far": 1877
+        },
+        {
+          "episode": 100,
+          "return": 11.0,
+          "steps_so_far": 1888,
+          "validation_mean": 9.4
+        }
+      ]
+    },
+    {
+      "seed": 1,
+      "task": "CartPole-v1",
+      "training_episodes": 100,
+      "selected_episode": 50,
+      "validation_seeds": [
+        1000100,
+        1000101,
+        1000102,
+        1000103,
+        1000104
+      ],
+      "test_seeds": [
+        2000100,
+        2000101,
+        2000102,
+        2000103,
+        2000104,
+        2000105,
+        2000106,
+        2000107,
+        2000108,
+        2000109
+      ],
+      "policy_returns": [
+        33.0,
+        21.0,
+        30.0,
+        18.0,
+        18.0,
+        18.0,
+        22.0,
+        29.0,
+        16.0,
+        15.0
+      ],
+      "random_returns": [
+        25.0,
+        25.0,
+        25.0,
+        22.0,
+        33.0,
+        12.0,
+        19.0,
+        11.0,
+        27.0,
+        40.0
+      ],
+      "zero_returns": [
+        9.0,
+        10.0,
+        9.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        9.0,
+        10.0,
+        9.0
+      ],
+      "mean_return": 22.0,
+      "random_mean": 23.9,
+      "zero_mean": 9.6,
+      "checkpoint_sha256": "afeee6107c711ef625e976fbf4fcc17ef6f07b403c50f00bc4474b70e7152abb",
+      "trace": [
+        {
+          "episode": 1,
+          "return": 49.0,
+          "steps_so_far": 49
+        },
+        {
+          "episode": 2,
+          "return": 18.0,
+          "steps_so_far": 67
+        },
+        {
+          "episode": 3,
+          "return": 31.0,
+          "steps_so_far": 98
+        },
+        {
+          "episode": 4,
+          "return": 16.0,
+          "steps_so_far": 114
+        },
+        {
+          "episode": 5,
+          "return": 23.0,
+          "steps_so_far": 137
+        },
+        {
+          "episode": 6,
+          "return": 17.0,
+          "steps_so_far": 154
+        },
+        {
+          "episode": 7,
+          "return": 21.0,
+          "steps_so_far": 175
+        },
+        {
+          "episode": 8,
+          "return": 16.0,
+          "steps_so_far": 191
+        },
+        {
+          "episode": 9,
+          "return": 16.0,
+          "steps_so_far": 207
+        },
+        {
+          "episode": 10,
+          "return": 14.0,
+          "steps_so_far": 221,
+          "validation_mean": 9.2
+        },
+        {
+          "episode": 11,
+          "return": 10.0,
+          "steps_so_far": 231
+        },
+        {
+          "episode": 12,
+          "return": 24.0,
+          "steps_so_far": 255
+        },
+        {
+          "episode": 13,
+          "return": 12.0,
+          "steps_so_far": 267
+        },
+        {
+          "episode": 14,
+          "return": 16.0,
+          "steps_so_far": 283
+        },
+        {
+          "episode": 15,
+          "return": 16.0,
+          "steps_so_far": 299
+        },
+        {
+          "episode": 16,
+          "return": 17.0,
+          "steps_so_far": 316
+        },
+        {
+          "episode": 17,
+          "return": 15.0,
+          "steps_so_far": 331
+        },
+        {
+          "episode": 18,
+          "return": 23.0,
+          "steps_so_far": 354
+        },
+        {
+          "episode": 19,
+          "return": 16.0,
+          "steps_so_far": 370
+        },
+        {
+          "episode": 20,
+          "return": 23.0,
+          "steps_so_far": 393,
+          "validation_mean": 9.2
+        },
+        {
+          "episode": 21,
+          "return": 23.0,
+          "steps_so_far": 416
+        },
+        {
+          "episode": 22,
+          "return": 14.0,
+          "steps_so_far": 430
+        },
+        {
+          "episode": 23,
+          "return": 20.0,
+          "steps_so_far": 450
+        },
+        {
+          "episode": 24,
+          "return": 14.0,
+          "steps_so_far": 464
+        },
+        {
+          "episode": 25,
+          "return": 28.0,
+          "steps_so_far": 492
+        },
+        {
+          "episode": 26,
+          "return": 13.0,
+          "steps_so_far": 505
+        },
+        {
+          "episode": 27,
+          "return": 22.0,
+          "steps_so_far": 527
+        },
+        {
+          "episode": 28,
+          "return": 14.0,
+          "steps_so_far": 541
+        },
+        {
+          "episode": 29,
+          "return": 11.0,
+          "steps_so_far": 552
+        },
+        {
+          "episode": 30,
+          "return": 15.0,
+          "steps_so_far": 567,
+          "validation_mean": 14.6
+        },
+        {
+          "episode": 31,
+          "return": 34.0,
+          "steps_so_far": 601
+        },
+        {
+          "episode": 32,
+          "return": 19.0,
+          "steps_so_far": 620
+        },
+        {
+          "episode": 33,
+          "return": 21.0,
+          "steps_so_far": 641
+        },
+        {
+          "episode": 34,
+          "return": 13.0,
+          "steps_so_far": 654
+        },
+        {
+          "episode": 35,
+          "return": 12.0,
+          "steps_so_far": 666
+        },
+        {
+          "episode": 36,
+          "return": 32.0,
+          "steps_so_far": 698
+        },
+        {
+          "episode": 37,
+          "return": 34.0,
+          "steps_so_far": 732
+        },
+        {
+          "episode": 38,
+          "return": 9.0,
+          "steps_so_far": 741
+        },
+        {
+          "episode": 39,
+          "return": 10.0,
+          "steps_so_far": 751
+        },
+        {
+          "episode": 40,
+          "return": 14.0,
+          "steps_so_far": 765,
+          "validation_mean": 9.2
+        },
+        {
+          "episode": 41,
+          "return": 13.0,
+          "steps_so_far": 778
+        },
+        {
+          "episode": 42,
+          "return": 33.0,
+          "steps_so_far": 811
+        },
+        {
+          "episode": 43,
+          "return": 18.0,
+          "steps_so_far": 829
+        },
+        {
+          "episode": 44,
+          "return": 15.0,
+          "steps_so_far": 844
+        },
+        {
+          "episode": 45,
+          "return": 12.0,
+          "steps_so_far": 856
+        },
+        {
+          "episode": 46,
+          "return": 9.0,
+          "steps_so_far": 865
+        },
+        {
+          "episode": 47,
+          "return": 16.0,
+          "steps_so_far": 881
+        },
+        {
+          "episode": 48,
+          "return": 13.0,
+          "steps_so_far": 894
+        },
+        {
+          "episode": 49,
+          "return": 24.0,
+          "steps_so_far": 918
+        },
+        {
+          "episode": 50,
+          "return": 11.0,
+          "steps_so_far": 929,
+          "validation_mean": 20.8
+        },
+        {
+          "episode": 51,
+          "return": 22.0,
+          "steps_so_far": 951
+        },
+        {
+          "episode": 52,
+          "return": 50.0,
+          "steps_so_far": 1001
+        },
+        {
+          "episode": 53,
+          "return": 19.0,
+          "steps_so_far": 1020
+        },
+        {
+          "episode": 54,
+          "return": 16.0,
+          "steps_so_far": 1036
+        },
+        {
+          "episode": 55,
+          "return": 23.0,
+          "steps_so_far": 1059
+        },
+        {
+          "episode": 56,
+          "return": 37.0,
+          "steps_so_far": 1096
+        },
+        {
+          "episode": 57,
+          "return": 11.0,
+          "steps_so_far": 1107
+        },
+        {
+          "episode": 58,
+          "return": 17.0,
+          "steps_so_far": 1124
+        },
+        {
+          "episode": 59,
+          "return": 19.0,
+          "steps_so_far": 1143
+        },
+        {
+          "episode": 60,
+          "return": 12.0,
+          "steps_so_far": 1155,
+          "validation_mean": 10.4
+        },
+        {
+          "episode": 61,
+          "return": 12.0,
+          "steps_so_far": 1167
+        },
+        {
+          "episode": 62,
+          "return": 13.0,
+          "steps_so_far": 1180
+        },
+        {
+          "episode": 63,
+          "return": 13.0,
+          "steps_so_far": 1193
+        },
+        {
+          "episode": 64,
+          "return": 17.0,
+          "steps_so_far": 1210
+        },
+        {
+          "episode": 65,
+          "return": 21.0,
+          "steps_so_far": 1231
+        },
+        {
+          "episode": 66,
+          "return": 16.0,
+          "steps_so_far": 1247
+        },
+        {
+          "episode": 67,
+          "return": 24.0,
+          "steps_so_far": 1271
+        },
+        {
+          "episode": 68,
+          "return": 13.0,
+          "steps_so_far": 1284
+        },
+        {
+          "episode": 69,
+          "return": 18.0,
+          "steps_so_far": 1302
+        },
+        {
+          "episode": 70,
+          "return": 22.0,
+          "steps_so_far": 1324,
+          "validation_mean": 10.8
+        },
+        {
+          "episode": 71,
+          "return": 16.0,
+          "steps_so_far": 1340
+        },
+        {
+          "episode": 72,
+          "return": 18.0,
+          "steps_so_far": 1358
+        },
+        {
+          "episode": 73,
+          "return": 15.0,
+          "steps_so_far": 1373
+        },
+        {
+          "episode": 74,
+          "return": 10.0,
+          "steps_so_far": 1383
+        },
+        {
+          "episode": 75,
+          "return": 15.0,
+          "steps_so_far": 1398
+        },
+        {
+          "episode": 76,
+          "return": 19.0,
+          "steps_so_far": 1417
+        },
+        {
+          "episode": 77,
+          "return": 19.0,
+          "steps_so_far": 1436
+        },
+        {
+          "episode": 78,
+          "return": 10.0,
+          "steps_so_far": 1446
+        },
+        {
+          "episode": 79,
+          "return": 25.0,
+          "steps_so_far": 1471
+        },
+        {
+          "episode": 80,
+          "return": 17.0,
+          "steps_so_far": 1488,
+          "validation_mean": 9.4
+        },
+        {
+          "episode": 81,
+          "return": 20.0,
+          "steps_so_far": 1508
+        },
+        {
+          "episode": 82,
+          "return": 24.0,
+          "steps_so_far": 1532
+        },
+        {
+          "episode": 83,
+          "return": 14.0,
+          "steps_so_far": 1546
+        },
+        {
+          "episode": 84,
+          "return": 18.0,
+          "steps_so_far": 1564
+        },
+        {
+          "episode": 85,
+          "return": 19.0,
+          "steps_so_far": 1583
+        },
+        {
+          "episode": 86,
+          "return": 12.0,
+          "steps_so_far": 1595
+        },
+        {
+          "episode": 87,
+          "return": 13.0,
+          "steps_so_far": 1608
+        },
+        {
+          "episode": 88,
+          "return": 11.0,
+          "steps_so_far": 1619
+        },
+        {
+          "episode": 89,
+          "return": 15.0,
+          "steps_so_far": 1634
+        },
+        {
+          "episode": 90,
+          "return": 26.0,
+          "steps_so_far": 1660,
+          "validation_mean": 9.6
+        },
+        {
+          "episode": 91,
+          "return": 10.0,
+          "steps_so_far": 1670
+        },
+        {
+          "episode": 92,
+          "return": 24.0,
+          "steps_so_far": 1694
+        },
+        {
+          "episode": 93,
+          "return": 32.0,
+          "steps_so_far": 1726
+        },
+        {
+          "episode": 94,
+          "return": 26.0,
+          "steps_so_far": 1752
+        },
+        {
+          "episode": 95,
+          "return": 19.0,
+          "steps_so_far": 1771
+        },
+        {
+          "episode": 96,
+          "return": 14.0,
+          "steps_so_far": 1785
+        },
+        {
+          "episode": 97,
+          "return": 10.0,
+          "steps_so_far": 1795
+        },
+        {
+          "episode": 98,
+          "return": 25.0,
+          "steps_so_far": 1820
+        },
+        {
+          "episode": 99,
+          "return": 15.0,
+          "steps_so_far": 1835
+        },
+        {
+          "episode": 100,
+          "return": 23.0,
+          "steps_so_far": 1858,
+          "validation_mean": 10.8
+        }
+      ]
+    },
+    {
+      "seed": 2,
+      "task": "CartPole-v1",
+      "training_episodes": 100,
+      "selected_episode": 10,
+      "validation_seeds": [
+        1000200,
+        1000201,
+        1000202,
+        1000203,
+        1000204
+      ],
+      "test_seeds": [
+        2000200,
+        2000201,
+        2000202,
+        2000203,
+        2000204,
+        2000205,
+        2000206,
+        2000207,
+        2000208,
+        2000209
+      ],
+      "policy_returns": [
+        9.0,
+        9.0,
+        10.0,
+        9.0,
+        9.0,
+        10.0,
+        10.0,
+        10.0,
+        8.0,
+        10.0
+      ],
+      "random_returns": [
+        15.0,
+        44.0,
+        23.0,
+        24.0,
+        10.0,
+        20.0,
+        16.0,
+        17.0,
+        25.0,
+        11.0
+      ],
+      "zero_returns": [
+        10.0,
+        10.0,
+        9.0,
+        10.0,
+        9.0,
+        9.0,
+        8.0,
+        8.0,
+        10.0,
+        9.0
+      ],
+      "mean_return": 9.4,
+      "random_mean": 20.5,
+      "zero_mean": 9.2,
+      "checkpoint_sha256": "502ae4560aef8f89b64c8c5067717485e544366ee0f402ec8aaa6b28460b49af",
+      "trace": [
+        {
+          "episode": 1,
+          "return": 27.0,
+          "steps_so_far": 27
+        },
+        {
+          "episode": 2,
+          "return": 12.0,
+          "steps_so_far": 39
+        },
+        {
+          "episode": 3,
+          "return": 12.0,
+          "steps_so_far": 51
+        },
+        {
+          "episode": 4,
+          "return": 10.0,
+          "steps_so_far": 61
+        },
+        {
+          "episode": 5,
+          "return": 25.0,
+          "steps_so_far": 86
+        },
+        {
+          "episode": 6,
+          "return": 13.0,
+          "steps_so_far": 99
+        },
+        {
+          "episode": 7,
+          "return": 30.0,
+          "steps_so_far": 129
+        },
+        {
+          "episode": 8,
+          "return": 30.0,
+          "steps_so_far": 159
+        },
+        {
+          "episode": 9,
+          "return": 15.0,
+          "steps_so_far": 174
+        },
+        {
+          "episode": 10,
+          "return": 14.0,
+          "steps_so_far": 188,
+          "validation_mean": 9.0
+        },
+        {
+          "episode": 11,
+          "return": 16.0,
+          "steps_so_far": 204
+        },
+        {
+          "episode": 12,
+          "return": 13.0,
+          "steps_so_far": 217
+        },
+        {
+          "episode": 13,
+          "return": 9.0,
+          "steps_so_far": 226
+        },
+        {
+          "episode": 14,
+          "return": 22.0,
+          "steps_so_far": 248
+        },
+        {
+          "episode": 15,
+          "return": 12.0,
+          "steps_so_far": 260
+        },
+        {
+          "episode": 16,
+          "return": 20.0,
+          "steps_so_far": 280
+        },
+        {
+          "episode": 17,
+          "return": 12.0,
+          "steps_so_far": 292
+        },
+        {
+          "episode": 18,
+          "return": 53.0,
+          "steps_so_far": 345
+        },
+        {
+          "episode": 19,
+          "return": 20.0,
+          "steps_so_far": 365
+        },
+        {
+          "episode": 20,
+          "return": 16.0,
+          "steps_so_far": 381,
+          "validation_mean": 9.0
+        },
+        {
+          "episode": 21,
+          "return": 19.0,
+          "steps_so_far": 400
+        },
+        {
+          "episode": 22,
+          "return": 25.0,
+          "steps_so_far": 425
+        },
+        {
+          "episode": 23,
+          "return": 14.0,
+          "steps_so_far": 439
+        },
+        {
+          "episode": 24,
+          "return": 16.0,
+          "steps_so_far": 455
+        },
+        {
+          "episode": 25,
+          "return": 17.0,
+          "steps_so_far": 472
+        },
+        {
+          "episode": 26,
+          "return": 27.0,
+          "steps_so_far": 499
+        },
+        {
+          "episode": 27,
+          "return": 15.0,
+          "steps_so_far": 514
+        },
+        {
+          "episode": 28,
+          "return": 24.0,
+          "steps_so_far": 538
+        },
+        {
+          "episode": 29,
+          "return": 13.0,
+          "steps_so_far": 551
+        },
+        {
+          "episode": 30,
+          "return": 16.0,
+          "steps_so_far": 567,
+          "validation_mean": 9.0
+        },
+        {
+          "episode": 31,
+          "return": 11.0,
+          "steps_so_far": 578
+        },
+        {
+          "episode": 32,
+          "return": 19.0,
+          "steps_so_far": 597
+        },
+        {
+          "episode": 33,
+          "return": 16.0,
+          "steps_so_far": 613
+        },
+        {
+          "episode": 34,
+          "return": 20.0,
+          "steps_so_far": 633
+        },
+        {
+          "episode": 35,
+          "return": 13.0,
+          "steps_so_far": 646
+        },
+        {
+          "episode": 36,
+          "return": 16.0,
+          "steps_so_far": 662
+        },
+        {
+          "episode": 37,
+          "return": 15.0,
+          "steps_so_far": 677
+        },
+        {
+          "episode": 38,
+          "return": 15.0,
+          "steps_so_far": 692
+        },
+        {
+          "episode": 39,
+          "return": 30.0,
+          "steps_so_far": 722
+        },
+        {
+          "episode": 40,
+          "return": 23.0,
+          "steps_so_far": 745,
+          "validation_mean": 9.0
+        },
+        {
+          "episode": 41,
+          "return": 9.0,
+          "steps_so_far": 754
+        },
+        {
+          "episode": 42,
+          "return": 28.0,
+          "steps_so_far": 782
+        },
+        {
+          "episode": 43,
+          "return": 12.0,
+          "steps_so_far": 794
+        },
+        {
+          "episode": 44,
+          "return": 15.0,
+          "steps_so_far": 809
+        },
+        {
+          "episode": 45,
+          "return": 11.0,
+          "steps_so_far": 820
+        },
+        {
+          "episode": 46,
+          "return": 17.0,
+          "steps_so_far": 837
+        },
+        {
+          "episode": 47,
+          "return": 14.0,
+          "steps_so_far": 851
+        },
+        {
+          "episode": 48,
+          "return": 16.0,
+          "steps_so_far": 867
+        },
+        {
+          "episode": 49,
+          "return": 22.0,
+          "steps_so_far": 889
+        },
+        {
+          "episode": 50,
+          "return": 12.0,
+          "steps_so_far": 901,
+          "validation_mean": 9.0
+        },
+        {
+          "episode": 51,
+          "return": 37.0,
+          "steps_so_far": 938
+        },
+        {
+          "episode": 52,
+          "return": 29.0,
+          "steps_so_far": 967
+        },
+        {
+          "episode": 53,
+          "return": 20.0,
+          "steps_so_far": 987
+        },
+        {
+          "episode": 54,
+          "return": 18.0,
+          "steps_so_far": 1005
+        },
+        {
+          "episode": 55,
+          "return": 20.0,
+          "steps_so_far": 1025
+        },
+        {
+          "episode": 56,
+          "return": 16.0,
+          "steps_so_far": 1041
+        },
+        {
+          "episode": 57,
+          "return": 21.0,
+          "steps_so_far": 1062
+        },
+        {
+          "episode": 58,
+          "return": 11.0,
+          "steps_so_far": 1073
+        },
+        {
+          "episode": 59,
+          "return": 12.0,
+          "steps_so_far": 1085
+        },
+        {
+          "episode": 60,
+          "return": 9.0,
+          "steps_so_far": 1094,
+          "validation_mean": 9.0
+        },
+        {
+          "episode": 61,
+          "return": 23.0,
+          "steps_so_far": 1117
+        },
+        {
+          "episode": 62,
+          "return": 28.0,
+          "steps_so_far": 1145
+        },
+        {
+          "episode": 63,
+          "return": 12.0,
+          "steps_so_far": 1157
+        },
+        {
+          "episode": 64,
+          "return": 25.0,
+          "steps_so_far": 1182
+        },
+        {
+          "episode": 65,
+          "return": 17.0,
+          "steps_so_far": 1199
+        },
+        {
+          "episode": 66,
+          "return": 21.0,
+          "steps_so_far": 1220
+        },
+        {
+          "episode": 67,
+          "return": 9.0,
+          "steps_so_far": 1229
+        },
+        {
+          "episode": 68,
+          "return": 28.0,
+          "steps_so_far": 1257
+        },
+        {
+          "episode": 69,
+          "return": 22.0,
+          "steps_so_far": 1279
+        },
+        {
+          "episode": 70,
+          "return": 14.0,
+          "steps_so_far": 1293,
+          "validation_mean": 9.0
+        },
+        {
+          "episode": 71,
+          "return": 24.0,
+          "steps_so_far": 1317
+        },
+        {
+          "episode": 72,
+          "return": 19.0,
+          "steps_so_far": 1336
+        },
+        {
+          "episode": 73,
+          "return": 8.0,
+          "steps_so_far": 1344
+        },
+        {
+          "episode": 74,
+          "return": 18.0,
+          "steps_so_far": 1362
+        },
+        {
+          "episode": 75,
+          "return": 13.0,
+          "steps_so_far": 1375
+        },
+        {
+          "episode": 76,
+          "return": 12.0,
+          "steps_so_far": 1387
+        },
+        {
+          "episode": 77,
+          "return": 14.0,
+          "steps_so_far": 1401
+        },
+        {
+          "episode": 78,
+          "return": 20.0,
+          "steps_so_far": 1421
+        },
+        {
+          "episode": 79,
+          "return": 9.0,
+          "steps_so_far": 1430
+        },
+        {
+          "episode": 80,
+          "return": 15.0,
+          "steps_so_far": 1445,
+          "validation_mean": 9.0
+        },
+        {
+          "episode": 81,
+          "return": 13.0,
+          "steps_so_far": 1458
+        },
+        {
+          "episode": 82,
+          "return": 19.0,
+          "steps_so_far": 1477
+        },
+        {
+          "episode": 83,
+          "return": 10.0,
+          "steps_so_far": 1487
+        },
+        {
+          "episode": 84,
+          "return": 9.0,
+          "steps_so_far": 1496
+        },
+        {
+          "episode": 85,
+          "return": 10.0,
+          "steps_so_far": 1506
+        },
+        {
+          "episode": 86,
+          "return": 11.0,
+          "steps_so_far": 1517
+        },
+        {
+          "episode": 87,
+          "return": 29.0,
+          "steps_so_far": 1546
+        },
+        {
+          "episode": 88,
+          "return": 21.0,
+          "steps_so_far": 1567
+        },
+        {
+          "episode": 89,
+          "return": 13.0,
+          "steps_so_far": 1580
+        },
+        {
+          "episode": 90,
+          "return": 11.0,
+          "steps_so_far": 1591,
+          "validation_mean": 9.0
+        },
+        {
+          "episode": 91,
+          "return": 14.0,
+          "steps_so_far": 1605
+        },
+        {
+          "episode": 92,
+          "return": 12.0,
+          "steps_so_far": 1617
+        },
+        {
+          "episode": 93,
+          "return": 18.0,
+          "steps_so_far": 1635
+        },
+        {
+          "episode": 94,
+          "return": 17.0,
+          "steps_so_far": 1652
+        },
+        {
+          "episode": 95,
+          "return": 14.0,
+          "steps_so_far": 1666
+        },
+        {
+          "episode": 96,
+          "return": 27.0,
+          "steps_so_far": 1693
+        },
+        {
+          "episode": 97,
+          "return": 31.0,
+          "steps_so_far": 1724
+        },
+        {
+          "episode": 98,
+          "return": 11.0,
+          "steps_so_far": 1735
+        },
+        {
+          "episode": 99,
+          "return": 13.0,
+          "steps_so_far": 1748
+        },
+        {
+          "episode": 100,
+          "return": 13.0,
+          "steps_so_far": 1761,
+          "validation_mean": 9.0
+        }
+      ]
+    }
+  ],
+  "across_seed_mean": 13.766666666666666,
+  "across_seed_std": 7.134657198025237
+}
