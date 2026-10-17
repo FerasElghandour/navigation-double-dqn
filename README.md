@@ -14,6 +14,8 @@ Online action selection and target-network evaluation, experience replay, epsilo
 
 A new CartPole-v1 path trains the released agent, selects checkpoints using separate validation reset seeds, and evaluates against random and zero-action baselines on disjoint final reset seeds. Three100-episode runs and reloadable checkpoints are included.
 
+Longer-budget evidence: **14.93 mean return after 200 episodes per seed**, versus random 21.30 and a task-aware controller 500.00. The agent still trails random. These are exploratory simulator comparisons, not legacy environment or real-robot results.
+
 [Commands, artifacts and benchmark scope](BENCHMARKS.md) · [Versioned profiles](reproduction.json)
 
 

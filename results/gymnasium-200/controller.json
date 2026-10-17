@@ -1,0 +1,108 @@
+{
+  "task": "CartPole-v1",
+  "protocol": "Fixed task-aware controller on the same previously inspected rollout seeds; exploratory diagnostic, not untouched external evaluation",
+  "controller": "linear switching with coefficients [0.01,0.02,1,0.1]",
+  "tuning": "Constants fixed before the first run; no fitting or search",
+  "information_advantage": "Pendulum controller uses known simulator mass, length, gravity and torque bound; RL learns without these dynamics",
+  "gymnasium": "1.4.0",
+  "numpy": "2.5.4",
+  "source_sha256": "2cfab9bbec9e1656fc045637ff1ae1bfe9e9346fe8b0f5b1c230527257b0737e",
+  "benchmark_sha256": "3183c7fc7c0d6409d6850546073bc950618a570f08426c70fcc7283e3d120fda",
+  "groups": [
+    {
+      "training_seed_group": 0,
+      "rollout_seeds": [
+        2000000,
+        2000001,
+        2000002,
+        2000003,
+        2000004,
+        2000005,
+        2000006,
+        2000007,
+        2000008,
+        2000009
+      ],
+      "controller_returns": [
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0
+      ],
+      "mean_return": 500.0,
+      "rl_mean_return": 13.4,
+      "random_mean_return": 19.5,
+      "physics": {}
+    },
+    {
+      "training_seed_group": 1,
+      "rollout_seeds": [
+        2000100,
+        2000101,
+        2000102,
+        2000103,
+        2000104,
+        2000105,
+        2000106,
+        2000107,
+        2000108,
+        2000109
+      ],
+      "controller_returns": [
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0
+      ],
+      "mean_return": 500.0,
+      "rl_mean_return": 22.0,
+      "random_mean_return": 23.9,
+      "physics": {}
+    },
+    {
+      "training_seed_group": 2,
+      "rollout_seeds": [
+        2000200,
+        2000201,
+        2000202,
+        2000203,
+        2000204,
+        2000205,
+        2000206,
+        2000207,
+        2000208,
+        2000209
+      ],
+      "controller_returns": [
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0
+      ],
+      "mean_return": 500.0,
+      "rl_mean_return": 9.4,
+      "random_mean_return": 20.5,
+      "physics": {}
+    }
+  ],
+  "mean_return": 500.0,
+  "std_across_seed_groups": 0.0
+}
