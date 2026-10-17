@@ -66,4 +66,8 @@ Run the focused offline behavior checks with `python smoke_test.py` after instal
 
 ## Limitations
 
-The legacy Banana Unity environment is needed for full end-to-end reproduction. No environment executable, saved reward curve, or trained checkpoint is bundled; no solved score is fabricated.
+The legacy Banana Unity environment is needed for full end-to-end reproduction. No legacy Banana executable, reward curve or Banana-trained checkpoint is bundled. The separate Gymnasium CartPole benchmark includes checkpoints and held-out results; those do not establish a Banana solve.
+
+## Reuse
+
+Original reproduction and validation tooling is available under MIT; see [LICENSING.md](LICENSING.md) for the explicit file scope and preserved upstream, dataset and checkpoint terms.
