@@ -1,7 +1,5 @@
 # Navigation with Double DQN
 
-**Feras Elghandour** · Technical case study
-
 Learn a discrete navigation policy from vector observations while reducing overestimation in value learning.
 
 ## Implementation
@@ -9,22 +7,42 @@ Learn a discrete navigation policy from vector observations while reducing overe
 Online action selection and target-network evaluation, experience replay, epsilon-greedy exploration, and soft target updates.
 
 ```mermaid
-flowchart LR
-    A[Input preparation] --> B[Implementation]
-    B --> C[Evaluation]
-    C --> D[Results and interpretation]
+flowchart TD
+    N0["State and epsilon-greedy local Q-values"] --> N1
+    N1["Replay transition batch"] --> N2
+    N2["Local network selects next action"] --> N3
+    N3["Target network evaluates selected action"] --> N4
+    N4["TD loss and soft target update"]
+```
+
+## Try a small example
+
+Generated transitions exercise action selection and one learning update. This does not establish navigation performance in an environment.
+
+After the local setup below, run from the repository root:
+
+```sh
+python examples/quickstart.py
+```
+
+The [example source](examples/quickstart.py), [captured output](examples/expected-output.txt) and [execution record](examples/environment.json) keep this demonstration inspectable. Floating-point values may vary with library versions.
+
+Observed output from this run:
+
+```text
+{
+  "fixture": "untrained Q network/generated transitions; no environment score",
+  "action": 3,
+  "replay_size": 8,
+  "online_changed": true
+}
 ```
 
 ## Evidence and results
 
 The source provides the full agent and a simulation training entry point. CPU checks exercise action selection and parameter updates. A score target in the training script is a stopping criterion, not evidence of an achieved benchmark.
 
-Results described as saved come from the retained experiment record. See [VALIDATION.md](VALIDATION.md) for the checks performed on this release and their scope.
-
-## Practical relevance
-
-This project demonstrates online action selection and target-network evaluation, experience replay, epsilon-greedy exploration, and soft target updates.
-The implementation and evaluation make the trade-offs inspectable for technical review.
+See [VALIDATION.md](VALIDATION.md) for the release checks and their scope.
 
 ## Run locally
 
@@ -47,7 +65,3 @@ Run the focused offline behavior checks with `python smoke_test.py` after instal
 ## Limitations
 
 The legacy Banana Unity environment is needed for full end-to-end reproduction. No environment executable, saved reward curve, or trained checkpoint is bundled; no solved score is fabricated.
-
-## Development
-
-Changes should include a clear description of the behavior affected and verification appropriate to that behavior. Keep input data, credentials, model caches, and generated artifacts outside version control.

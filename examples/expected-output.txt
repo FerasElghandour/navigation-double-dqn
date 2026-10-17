@@ -1,0 +1,1 @@
+{"fixture": "untrained Q network/generated transitions; no environment score", "action": 3, "replay_size": 8, "online_changed": true}
