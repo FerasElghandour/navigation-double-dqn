@@ -6,14 +6,7 @@ Learn a discrete navigation policy from vector observations while reducing overe
 
 Online action selection and target-network evaluation, experience replay, epsilon-greedy exploration, and soft target updates.
 
-```mermaid
-flowchart TD
-    N0["State and epsilon-greedy local Q-values"] --> N1
-    N1["Replay transition batch"] --> N2
-    N2["Local network selects next action"] --> N3
-    N3["Target network evaluates selected action"] --> N4
-    N4["TD loss and soft target update"]
-```
+![Implementation mechanism: State and epsilon-greedy local Q-values → Replay transition batch → Local network selects next action → Target network evaluates selected action → TD loss and soft target update](assets/mechanism.svg)
 
 ## Try a small example
 
